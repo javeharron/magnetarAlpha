@@ -1,5 +1,5 @@
 //Copyright (c) 2023, John Simonis and The Ohio State University
-//This code was written by John Simonis for the ClaySight research project at The Ohio State University.
+//This code was written by John Simonis for the Magnetar research project at The Ohio State University.
 #include <iostream>
 #include <string>
 #include <vector>
@@ -36,11 +36,11 @@ int main()
     XLDocument doc; //Workbook object
 
 
-    for (int i = 1; i < 99; i++) { //This iterates through all serial ports until it finds the one with a baudrate of 57600 which is specific to ClaySight
+    for (int i = 1; i < 99; i++) { //This iterates through all serial ports until it finds the one with a baudrate of 57600 which is specific to Magnetar
         SERIAL_PORT[7] = to_string(i)[0];
         SERIAL_PORT[8] = to_string(i)[1];
-        if (serial.openDevice(SERIAL_PORT, 57600) == 1) { //This baudrate is relatively nonstandard so this shouldnt interfere with other serial devices
-            cout << "Claysight likely located on: " << SERIAL_PORT << endl;
+        if (serial.openDevice(SERIAL_PORT, 115200) == 1) { //This baudrate is relatively nonstandard so this shouldnt interfere with other serial devices
+            cout << "Magnetar likely located on: " << SERIAL_PORT << endl;
             serial.closeDevice();
             break;
         }
@@ -49,7 +49,7 @@ int main()
     char errorOpening = serial.openDevice(SERIAL_PORT, 57600); //Attempt to open the port on the first 57600 device
 
     if (errorOpening != 1) { 
-        cout << "Error connecting to ClaySight. Close all other Serial COM apps!" << endl << "Press enter to exit."; 
+        cout << "Error connecting to Magnetar. Close all other Serial COM apps!" << endl << "Press enter to exit."; 
         getchar(); 
         return 0; 
     }
@@ -62,11 +62,11 @@ int main()
 
     char buffer[20];
 
-    cout << endl << "Written by John Simonis" << endl << "Copyright(C) 2023" << endl << "ClaySight (The Ohio State University)";
+    cout << endl << "Written by John Simonis" << endl << "Copyright(C) 2023" << endl << "Magnetar (The Ohio State University)";
 
     this_thread::sleep_for(1.5s);//Normally pauses like this are bad practice, this is just to show the attributation.
  
-    serial.writeString("SendData");//Sends the "SendData" string over serial to begin the debug process
+    serial.writeString("SendData");//Sends the "SendData" string over serial to begin the table process
 
     while(true) { //This will continue logging data to our vector until we reach a DataEND or the user closes the program.
         serial.readString(buffer, '\n', 100);
@@ -75,7 +75,7 @@ int main()
             break;
         }
         else {
-            Data.push_back(buffer); //This is somewhat bad practice as the program could theoretically overrun with data, this works for ClaySight debug mode ONLY
+            Data.push_back(buffer); //This is somewhat bad practice as the program could theoretically overrun with data, this works for Magnetar table mode ONLY
         }
     }
 

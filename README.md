@@ -12,7 +12,9 @@ From this target velocity drag is added over set time intervals modeled by the e
 
 # $` V_d = V_i + \frac{\frac{1}{2}*\rho*V_i^2*A*C_d}{M}*R`$
 
-In this equation, $`V_d`$ is the final velocity after a set time interval of drag. $`V_i`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals).
+In this equation, $`V_d`$ is the final velocity after a set time interval of drag. $`V_i`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals). This is continuously run until:
+## $`V_d`$*t = d
+
 ### Items
 The Magnetar project files include the following: 
 - Fully modular and customizable software.

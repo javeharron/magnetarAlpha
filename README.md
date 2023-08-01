@@ -10,10 +10,13 @@ This system utilizes a simple revolving design to house multiple projectiles for
 
 From this target velocity drag is added over set time intervals modeled by the equation: 
 
-# $` V_d = V_i + \frac{\frac{1}{2}*\rho*V_i^2*A*C_d}{M}*R`$
+# $` V_i = V_t + \frac{\frac{1}{2}\rhoV_t^2AC_d}{M}R`$
 
-In this equation, $`V_d`$ is the final velocity after a set time interval of drag. $`V_i`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals). This is continuously run until:
-## $`V_d`$*t = d
+In this equation, $`V_i`$ is the initial velocity after a set time interval of inverse drag. $`V_t`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals). This is continuously run until:
+# $`V_it = d`$
+
+Finally the voltage necessary to achieve this velocity is calculated using the formula of: 
+#U = $`\frac{1}{2}`$
 
 ### Items
 The Magnetar project files include the following: 

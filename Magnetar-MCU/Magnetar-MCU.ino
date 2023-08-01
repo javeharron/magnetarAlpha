@@ -64,7 +64,7 @@ float MuzVel() {
     while (digitalRead(MuzFin)) {
       TotalMillis += (millis() - CurrentMillis);
     }
-    return MuzDist/TotalMillis;
+    return (MuzDist/100)/TotalMillis;
   }
 }
 

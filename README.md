@@ -25,5 +25,6 @@ Currently the firmware allows for the configuration of:
 - Cross sectional area of projectile.
 - Density of environment.
 - Maximum voltage for capacitors.
+- Table output.
 
 

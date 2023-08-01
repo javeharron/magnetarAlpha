@@ -6,7 +6,7 @@ This system is designed to utilize commercially available LiDAR modules for dist
 
 This system utilizes a simple revolving design to house multiple projectiles for subsequent firing. These projectiles are standard length nerf darts combined with a ferro magnetic insert (M4x12mm Bolt).
 
-### Features and items
+### Items
 The Magnetar project files include the following: 
 - Fully modular and customizable software.
 - A modular datalogging program and corresponding visual studio projwct files to intercept serial port communication for dumping into .XLSX formats.
@@ -16,5 +16,14 @@ The Magnetar project files include the following:
 - Flow charts for all code present.
 - Sample BOM for at home fabrication.
 
+### Configurable features
+Currently the firmware allows for the configuration of:
+- Pins for circuit control and HID.
+- Capacitance of system.
+- Efficiency constant of coil.
+- Mass of dart projectile.
+- Cross sectional area of projectile.
+- Density of environment.
+- Maximum voltage for capacitors.
 
 

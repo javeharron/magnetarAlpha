@@ -17,6 +17,7 @@ In this equation, $`V_i`$ is the initial velocity after a set time interval of i
 
 Finally the voltage necessary to achieve this velocity is calculated using the formula of: 
 # $`V = \sqrt{\frac{\frac{1}{2}V_i^2}{C\frac{1}{2}E_c}}`$
+where $`E_c`$ is the efficiency constant of the coil (e.g. 2.25% or 0.0225).
 
 ### Items
 The Magnetar project files include the following: 

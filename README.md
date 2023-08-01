@@ -12,7 +12,7 @@ From this target velocity drag is added over set time intervals modeled by the e
 
 # $` V_i = V_t + \frac{\frac{1}{2}{\rho}V_t^2AC_d}{M}R`$
 
-In this equation, $`V_i`$ is the initial velocity after a set time interval of inverse drag. $`V_t`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals). This is continuously run until:
+In this equation, $`V_i`$ is the initial velocity after a set time interval of inverse drag. $`V_t`$ is the initial/target velocity of the projectile and R is the resolution of the time interval (e.g. 0.001 for millisecond intervals). Per loop $`V_i`$ becomes the next $`V_t`$. This is continuously run until:
 # $`V_it = d`$
 
 Finally the voltage necessary to achieve this velocity is calculated using the formula of: 

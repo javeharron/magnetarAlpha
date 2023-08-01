@@ -26,5 +26,7 @@ Currently the firmware allows for the configuration of:
 - Density of environment.
 - Maximum voltage for capacitors.
 - Table output.
+- Switching between full and auto ranging power.
+- Target energy.
 
 

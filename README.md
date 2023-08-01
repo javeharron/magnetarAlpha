@@ -14,7 +14,7 @@ The Magnetar project files include the following:
 - Data from testing the system at various 1-meter distances.
 - Full circuit schematic of the design.
 - Flow charts for all code present.
-- Sample BOM for self fabrication.
+- Sample BOM for at home fabrication.
 
 
 

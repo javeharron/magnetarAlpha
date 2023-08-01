@@ -16,7 +16,7 @@ In this equation, $`V_i`$ is the initial velocity after a set time interval of i
 # $`V_it = d`$
 
 Finally the voltage necessary to achieve this velocity is calculated using the formula of: 
-# $`\sqrt{\frac{\frac{1}{2}V_i^2}{C\frac{1}{2}E_c}}`$
+# $`V = \sqrt{\frac{\frac{1}{2}V_i^2}{C\frac{1}{2}E_c}}`$
 
 ### Items
 The Magnetar project files include the following: 

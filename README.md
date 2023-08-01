@@ -6,7 +6,7 @@ This system is designed to utilize commercially available LiDAR modules for dist
 
 This system utilizes a simple revolving design to house multiple projectiles for subsequent firing. These projectiles are standard-length Nerf darts combined with a ferromagnetic insert (M4x12mm Bolt). To calculate the corrected velocity necessary to overcome drag energy losses an iterative equation is used. Essentially, out to a set amount of resolution drag losses are added to the projectile's target impact velocity. The target velocity is found using the kinetic energy formula or: $`E_k = \frac{1}{2}mv^2`$
 
-From this target velocity drag is added over set time intervals modeled by the equation: $` V_d = \frac{\frac{1}{2}*\rho*V_i^2*A*C_d}{M}*R`$
+From this target velocity drag is added over set time intervals modeled by the equation: $` V_d = V_i + \frac{\frac{1}{2}*\rho*V_i^2*A*C_d}{M}*R`$
 
 ### Items
 The Magnetar project files include the following: 

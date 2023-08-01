@@ -85,6 +85,8 @@ void setup() {
   pinMode(TriggerPin, INPUT_PULLUP);
   pinMode(CalibPin, INPUT_PULLUP);
   pinMode(ReadPin, INPUT);
+  pinMode(MuzIn, INPUT_PULLUP);
+  pinMode(MuzFin, INPUT_PULLUP);
 
   Voltage = ReadVoltage(); //Reads the voltage across the capacitor bank.
   FullPower = false;

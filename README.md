@@ -4,7 +4,7 @@ Magnetar is a distance-ranging coil gun platform.
 ## Description
 This system is designed to utilize commercially available LiDAR modules for distance-based energy correction. As a projectile from a coil gun flies through the air energy is lost through drag. The goal of this project was to create a model to correct for this loss so projectiles impact with consistent energy.
 
-This system utilizes a simple revolving design to house multiple projectiles for subsequent firing. These projectiles are standard-length Nerf darts combined with a ferromagnetic insert (M4x12mm Bolt). To calculate the corrected velocity necessary to overcome drag energy losses an iterative equation is used. Essentially, out to a set amount of resolution drag losses are added to the projectile's target impact velocity. The target velocity is found using the kinetic energy formula or: 
+This system utilizes a simple revolving design to house multiple projectiles for subsequent firing. These projectiles are standard-length Nerf darts combined with a ferromagnetic insert (M4x12mm Bolt with bolt head against inner tip of dart). The coil used is 215 turns of 18 AWG enameled copper magnet wire. This is wrapped along a 45mm 3D-printed PLA shaft. To calculate the corrected velocity necessary to overcome drag energy losses an iterative equation is used. Essentially, out to a set amount of resolution drag losses are added to the projectile's target impact velocity. The target velocity is found using the kinetic energy formula or: 
 
 # $`E_k = \frac{1}{2}mv^2`$
 
